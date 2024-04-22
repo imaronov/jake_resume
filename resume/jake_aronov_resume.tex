@@ -1,0 +1,293 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Ilya Aronov
+% License : MIT
+% April 22nd, 2024
+%------------------------
+
+\pdfinfo
+{
+   /Author (Jake Aronov)
+   /Title  (Financial Analyst)
+   /Subject (Resume - Curriculum Vitae)
+   /Keywords (Financial modeling,
+              Data analysis,
+              Financial reporting,
+              Forecasting,
+              Budgeting,
+              Variance analysis,
+              Investment analysis,
+              Risk management,
+              Valuation,
+              Financial planning,
+              Corporate finance,
+              Excel,
+              SQL,
+              Bloomberg,
+              Financial statements,
+              Cash flow analysis,
+              Market research,
+              Economic analysis,
+              Asset management,
+              Performance metrics)
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\myname{Jacob Aronov}
+\def\myemail{aronov.jacob.11@gmail.com}
+\def\mylinkedin{aronov-jacob}
+\def\myphone{(508)654-2335}
+\def\mylocation{Natick, MA}
+\def\mytitle{Financial Analyst}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper,]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\usepackage[bottom]{footmisc}
+
+\usepackage{graphicx}
+\graphicspath{ {../images/} }
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\textheight}{1.5in}
+\addtolength{\topmargin}{-.7in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeListItem}[1]{
+  \item\small{
+    {#1}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+    \vspace{-5pt}
+}
+
+\newcommand*{\resumeSubheadingItem}[2]{
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large \myname} & Phone: \href{tel:\myphone}{\myphone} \\
+  \href{https://www.linkedin.com/in/ilya-aronov-b488a965/}{\mytitle} & Email: \href{mailto: \myemail}{\myemail}\\
+
+\end{tabular*}
+ 
+%-----------SUMMARY-------------------
+% \section{Summary}
+%   Results-driven college student with a strong academic background in finance and a passion 
+%   for analyzing financial data to drive strategic decision-making. Proficient in financial 
+%   modeling, data analysis, and statistical tools. Seeking to leverage my skills and knowledge 
+%   gained through coursework to obtain an internships to contribute effectively as a financial analyst. 
+
+%-----------CAREER OBJECTIVE-------------------
+\section{Career objective}
+  To secure a challenging role as a \mytitle\, where I can apply my strong analytical 
+  skills, solid understanding of financial principles, and proficiency in financial modeling 
+  and data analysis. Eager to contribute to the success of the organization by providing valuable 
+  insights and recommendations that drive strategic decision-making and financial performance. 
+  I am committed to continuous learning and growth, seeking opportunities to expand my knowledge 
+  and expertise in the finance industry.
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Emmanuel College}{Boston, MA}
+      {Bachelor of Science in Finance}{Expected May 2025}
+
+      \resumeSubheadingItem
+      {Minor in Economics}{GPA 3.5 Dean's List}
+      
+  \resumeSubHeadingListEnd
+
+%-----------RELEVANT COURSEWORK-----------------
+\section{Relevant Coursework}
+  \resumeSubHeadingListStart
+      
+      \resumeSubItem{Business and Finance}
+        {Business Analytics
+        International Economics and Finance
+        Financial Accounting
+        Managerial Accounting
+        Money and Financial Markets
+        Investment
+        Principles of Microeconomics
+        Principles of Macroeconomics}
+
+      \resumeSubItem{Statistics and Operations}
+        {Intro to Statistics with R
+        Operations Management}
+
+      \resumeSubItem{Business Fundamentals}
+        {Introduction to Business
+        Principles of Marketing}
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+   \resumeSubheading
+      {Nike Volleyball Camp (ASA Hoops)}{Boston, MA}
+      {Lead Volleyball Instructor}{June 2022 ‑ December 2023}
+      \resumeItemListStart
+        % \resumeItem{Lead Instructor}
+        %   {Supervised and led all aspects of a volleyball camp for 40+ athletes between the ages of 11 and 18.
+        %   Developed comprehensive training plans focusing on skills, conditioning, strategy, and team building.
+        %   Managed a team of 3 assistant coaches, delegating responsibilities and providing guidance.
+        %   Cultivated an engaging, positive environment focused on sportsmanship and personal growth}
+      
+        \resumeListItem
+          {Led and supervised all facets of a volleyball camp catering to over 40 athletes aged 11 to 18.}
+        \resumeListItem
+          {Designed and implemented comprehensive training programs emphasizing skill development, conditioning, strategic tactics, and team cohesion.}
+        \resumeListItem
+          {Managed a team of three assistant coaches, effectively delegating tasks and providing mentorship to ensure smooth camp operations.}
+        \resumeListItem
+          {Fostered an inclusive and positive environment centered around sportsmanship and individual development.}
+      
+          \resumeItemListEnd
+
+   \resumeSubheading
+      {Culinary Delights Inc.}{Natick, MA}
+      {Assistant Manager}{May 2019 ‑ August 2022}
+      \resumeItemListStart
+        % \resumeItem{Management}
+        %   {Multitasked cashier duties including operating POS system, handling transactions, and promoting daily specials with 100 percent accuracy.
+        %   Worked closely with the owner to solve problems and handle customer concerns.
+        %   Managed kitchen operations including food prep, inventory, ordering and maintaining equipment.}
+
+        \resumeListItem
+          {Successfully managed cashier responsibilities, including proficient operation of the POS system, accurate transaction handling, and proactive promotion of daily specials.}
+        \resumeListItem
+          {Collaborated closely with the owner to resolve issues and address customer concerns, ensuring high levels of customer satisfaction.}
+        \resumeListItem
+          {Oversaw kitchen operations, including food preparation, inventory management, order placement, and equipment maintenance, maintaining strict adherence to quality standards and health regulations.}
+
+      \resumeItemListEnd
+
+   \resumeSubheading
+      {Creative Club Global}{Toronoto, CA}
+      {Instructor}{June 2020 ‑ December 2020}
+      \resumeItemListStart
+        % \resumeItem{Teaching}
+        %   {Conducted engaging, live coding lessons over Zoom for children ages 8‑14 in small group settings.
+        %   Designed project‑based curricula covering languages like Scratch and HTML.
+        %   Adapted instruction styles to accommodate diverse learning needs and skill levels}
+
+        \resumeListItem
+          {Conducted interactive live coding lessons via Zoom for children aged 8-14 in small group environments, fostering engagement and participation.}
+        \resumeListItem
+          {Developed project-based curricula focused on languages such as Scratch and HTML, tailored to the age group's comprehension and skill levels.}
+        \resumeListItem
+          {Adapted teaching methodologies to accommodate diverse learning needs and varying proficiency levels, ensuring inclusivity and effective learning outcomes.}
+
+      \resumeItemListEnd
+ 
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    
+      \resumeSubItem{Personal}
+        {Adaptability, Attention to Detail, Leadership, Problem Solving}
+    
+      \resumeSubItem{Professional}
+        {Business Operations, Data Analysis, GAAP}
+
+      \resumeSubItem{Software}
+        {Microsoft Office Suite (Word, Excel, PowerPoint, Outlook), R Studio}
+    
+      \resumeSubItem{Languages}
+        {English, Russian}
+
+  \resumeSubHeadingListEnd
+  
+%--------CERTIFICATIONS------------
+\section{Extracurricular Activity}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {NCAA}{Emmanuel College}
+      {Athlete / Captain}{Sep 2021 ‑ Present}
+    % \resumeSubheadingItem
+    %   {Captain}{2023 ‑ Present}
+
+    \resumeSubheading
+      {MAIA}{Natick High School}
+      {Athlete / Captain}{2017 ‑ 2021}
+    % \resumeSubheadingItem
+    %   {Captain}{2020 ‑ 2021}
+    
+  \resumeSubHeadingListEnd
+
+%---------BAGDES------------
+\begin{center}
+    \href{https://www.emmanuel.edu/academics/academic-study/schools/school-business-management/undergraduate-programs/economics/finance}{\includegraphics[scale=0.18]{emmanuel_badge_transparent.png}}
+    \href{https://www.goecsaints.com/sports/m-volley/2023-24/roster?fbclid=IwZXh0bgNhZW0CMTAAAR1BNVivBPFXwbOnF0Or9-soHdK9oZpkIlVMOkQCKcvJAdITIKqFqxbJQVs_aem_AWWyeZeu-n9J8rkD5-lNwZaIXUJtoKfKY4K3m-vu2l1DcCKM-mdDvC9JsHp7QImKCABa0u0L1RcDO4bvdM66DGxy}{\includegraphics[scale=0.18]{Emmanuel_mascot_logo.png}}
+\end{center}
+%-------------------------------------------
+
+\end{document}

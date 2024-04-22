@@ -1,0 +1,163 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Ilya Aronov
+% License : MIT
+% April 22nd, 2024
+%------------------------
+
+\pdfinfo
+{
+   /Author (Jake Aronov)
+   /Title  (Financial Analyst)
+   /Subject (Resume - Curriculum Vitae)
+   /Keywords (Financial modeling,
+              Data analysis,
+              Financial reporting,
+              Forecasting,
+              Budgeting,
+              Variance analysis,
+              Investment analysis,
+              Risk management,
+              Valuation,
+              Financial planning,
+              Corporate finance,
+              Excel,
+              SQL,
+              Bloomberg,
+              Financial statements,
+              Cash flow analysis,
+              Market research,
+              Economic analysis,
+              Asset management,
+              Performance metrics)
+}
+
+\documentclass[11pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{charter}
+
+\graphicspath{ {../images/} }
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\definecolor{gr}{RGB}{225,225,225}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\myname{Jacob Aronov}
+\def\myemail{aronov.jacob.11@gmail.com}
+\def\mylinkedin{aronov-jacob}
+\def\myphone{(508)654-2335}
+\def\mylocation{Natick, MA}
+\def\mytitle{Financial Analyst}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     College Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\myyear{Junior}
+\def\mydegree{Bachelor of Science in Finance}
+\def\myuniversity{Emmanuel College}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Company Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\possitionApplied{[INTERNSHIP]}
+\def\hiringManager{Hiring Manager}
+\def\companyName{[Company Name]}
+\def\companyAddress{[COMPANY ADDRESS]}
+\def\companyCity{[COMPANY CITY]}
+
+\def\softwareUsed{[FINANCIAL SOFTWARE]}
+\def\companyMission{[mention any specific aspect of the company, such as innovation, sustainability, or community involvement]}
+
+%-------------------------
+% Custom commands
+\newcommand{\addressHeading}[4]{
+    {#1}\\
+    {#2}\\
+    {#3}\\
+    {#4}\\
+}
+
+\newcommand{\greeting}{
+    \vspace{-0.1in}Dear \hiringManager,
+}
+
+%-------------------------------------------
+%%%%%%  COVER LETTER STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Shaded header banner
+\AddToShipoutPictureBG{%
+\color{gr}
+\AtPageUpperLeft{\rule[-1.3in]{\paperwidth}{1.3in}}
+}
+
+%-------------------------
+% Header
+\begin{center}
+{\fontsize{28}{0}\selectfont\scshape \myname}
+
+\fontsize{10}{0}\selectfont\scshape \href{mailto:\myemail}{\faEnvelope\enspace \myemail}\hfill
+\fontsize{10}{0}\selectfont\scshape \href{tel:\myphone}{\faPhone\enspace \myphone}\hfill
+\fontsize{10}{0}\selectfont\scshape \faMapMarker\enspace \mylocation
+\end{center}
+
+%-------------------------
+% Body
+\vspace{0.2in}
+
+% Opening block
+\today
+\\ \\
+\addressHeading{\hiringManager}{\companyName}{\companyAddress}{\companyCity}
+
+\greeting
+
+% Body
+I am writing to express my interest in the \possitionApplied\, position at \companyName. 
+With a strong academic background in finance and a passion for analyzing financial data, 
+I am eager to contribute to \companyName\, team and gain valuable hands-on experience in the field.
+
+As a \myyear\, student pursuing a degree in \mydegree\, at \myuniversity, I have developed 
+a solid foundation in financial analysis, data interpretation, and strategic decision-making. 
+My coursework in financial modeling, investment analysis, and corporate finance has equipped me 
+with the skills necessary to excel in a dynamic and fast-paced environment.
+
+Furthermore, my proficiency in financial software such as \softwareUsed,  
+allows me to effectively analyze complex financial data and generate meaningful insights. 
+I am also comfortable working with databases and conducting market research to support 
+decision-making processes.
+
+I am particularly drawn to \companyName\, commitment to \companyMission. 
+I am excited about the opportunity to contribute to [Company Name]'s success and learn from 
+experienced professionals in the industry.
+
+Thank you for considering my application. I am looking forward to the possibility of discussing 
+how my skills and experiences align with the needs of \companyName. Please find my resume attached 
+for your review. I am available for an interview at your earliest convenience.
+
+% Closer
+\vspace{0.1in}
+\vfill
+
+\begin{flushright}
+
+\vspace{-0.1in}
+Sincerely, \\
+\myname\\
+
+\includegraphics[width=1.5in]{signature_transparent.png}
+
+\vspace{-0.1in}
+\mytitle
+
+\end{flushright}
+
+\end{document}
